@@ -531,6 +531,22 @@ sensors.touch.ev3 = {
     } ],
     standardPort : '1'
 };
+sensors.touch.nao = {
+    title : 'TOUCH',
+    modes : [ {
+        name : 'HAND',
+        type : 'Boolean',
+        ports : [ [ 'MOTOR_LEFT', 'LEFT' ], [ 'MOTOR_RIGHT', 'RIGHT' ] ],
+    }, {
+        name : 'HEAD',
+        type : 'Boolean',
+        ports : [ [ 'NAO_TOUCH_FRONT', 'FRONT' ], [ 'MOTOR_MIDDLE', 'MIDDLE' ], [ 'NAO_TOUCH_REAR', 'REAR' ] ],
+    }, {
+        name : 'BUMPER',
+        type : 'Boolean',
+        ports : [ [ 'MOTOR_LEFT', 'LEFT' ], [ 'MOTOR_RIGHT', 'RIGHT' ] ],
+    } ]
+};
 sensors.touch.nxt = sensors.touch.ev3;
 
 sensors.ultrasonic = {};
@@ -582,6 +598,7 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pin.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
+sensorsAll.nao = [ sensors.touch.nao ];
 
 function initSensors() {
     for ( var sensor in sensors) {
