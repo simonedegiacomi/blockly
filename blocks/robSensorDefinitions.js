@@ -536,15 +536,15 @@ sensors.touch.nao = {
     modes : [ {
         name : 'HAND',
         type : 'Boolean',
-        ports : [ [ 'MOTOR_LEFT', 'LEFT' ], [ 'MOTOR_RIGHT', 'RIGHT' ] ],
+        ports : [ [ 'MOTOR_LEFT', 'left' ], [ 'MOTOR_RIGHT', 'right' ] ],
     }, {
         name : 'HEAD',
         type : 'Boolean',
-        ports : [ [ 'NAO_TOUCH_FRONT', 'FRONT' ], [ 'MOTOR_MIDDLE', 'MIDDLE' ], [ 'NAO_TOUCH_REAR', 'REAR' ] ],
+        ports : [ [ 'NAO_TOUCH_FRONT', 'front' ], [ 'MOTOR_MIDDLE', 'middle' ], [ 'NAO_TOUCH_REAR', 'rear' ] ],
     }, {
         name : 'BUMPER',
         type : 'Boolean',
-        ports : [ [ 'MOTOR_LEFT', 'LEFT' ], [ 'MOTOR_RIGHT', 'RIGHT' ] ],
+        ports : [ [ 'MOTOR_LEFT', 'left' ], [ 'MOTOR_RIGHT', 'right' ] ],
     } ]
 };
 sensors.touch.nxt = sensors.touch.ev3;
