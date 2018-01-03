@@ -584,6 +584,14 @@ sensors.ultrasonic.nxt = {
     } ],
     standardPort : '4'
 };
+sensors.ultrasonic.nao = {
+    title : 'ULTRASONIC',
+    modes : [ {
+        name : 'DISTANCE',
+        type : 'Number',
+        unit : 'CM',
+    } ],
+};
 sensors.ultrasonic.mbot = sensors.ultrasonic.nxt;
 
 var sensorsAll = [];
@@ -598,7 +606,7 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pin.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
-sensorsAll.nao = [ sensors.touch.nao ];
+sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao ];
 
 function initSensors() {
     for ( var sensor in sensors) {
