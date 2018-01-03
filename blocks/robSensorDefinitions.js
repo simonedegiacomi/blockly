@@ -234,6 +234,7 @@ sensors.gyro.calliope = {
     } ],
     ports : [ [ 'x', 'X' ], [ 'y', 'Y' ] ],
 };
+sensors.gyro.nao = sensors.gyro.calliope;
 sensors.gyro.ev3 = {
     title : 'GYRO',
     modes : [ {
@@ -606,7 +607,7 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pin.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
-sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao ];
+sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao, sensors.gyro.nao];
 
 function initSensors() {
     for ( var sensor in sensors) {
