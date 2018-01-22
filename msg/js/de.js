@@ -1071,6 +1071,7 @@ Blockly.Msg.SENSOR_TOP = "oben";
 Blockly.Msg.SENSOR_TOUCH = "Berührungssensor";
 Blockly.Msg.SENSOR_TOUCH_BOB3 = "Arm";
 Blockly.Msg.SENSOR_ULTRASONIC = "Ultraschallsensor";
+Blockly.Msg.SENSOR_UNIT_ACCEL = "m/s²";  // untranslated
 Blockly.Msg.SENSOR_UNIT_CM = "cm";  // untranslated
 Blockly.Msg.SENSOR_UNIT_DEGREE = "°";  // untranslated
 Blockly.Msg.SENSOR_UNIT_MILLIG = "milli-g";  // untranslated

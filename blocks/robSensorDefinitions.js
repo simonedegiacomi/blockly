@@ -52,6 +52,17 @@ sensors.accelerometer.calliope = {
     ports : [ [ 'x', 'X' ], [ 'y', 'Y' ], [ 'z', 'Z' ], [ 'STRENGTH', 'STRENGTH' ] ],
 };
 sensors.accelerometer.microbit = sensors.accelerometer.calliope;
+sensors.accelerometer.nao = {
+    title : 'ACCELEROMETER',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number',
+        unit : 'ACCEL',
+        op : 'NUM_REV',
+        value : 512
+    } ],
+    ports : [ [ 'x', 'X' ], [ 'y', 'Y' ], [ 'z', 'Z' ] ],
+};
 
 sensors.battery = {};
 sensors.battery.ardu = {
@@ -607,7 +618,7 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pin.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
-sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao, sensors.gyro.nao];
+sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao, sensors.gyro.nao, sensors.accelerometer.nao];
 
 function initSensors() {
     for ( var sensor in sensors) {

@@ -1,7 +1,7 @@
 {
 	"@metadata": {
 		"author": "Ellen Spertus <ellen.spertus@gmail.com>",
-		"lastupdated": "2018-01-03 16:27:15.551582",
+		"lastupdated": "2018-01-22 17:09:13.626381",
 		"locale": "en",
 		"messagedocumentation" : "qqq"
 	},
@@ -1236,6 +1236,7 @@
 	"SENSOR_UNIT_OMEGA": "ω",
 	"SENSOR_UNIT_PERCENT": "%",
 	"SENSOR_UNIT_VOLT": "V",
+	"SENSOR_UNIT_ACCEL": "m/s²",
 	"SENSOR_TOUCH_BOB3": "arm",
 	"SENSOR_SOUND_CALLIOPE": "microphone",
 	"MODE_VALUE": "value",

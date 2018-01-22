@@ -975,6 +975,7 @@ Blockly.Msg.SENSOR_UNIT_MILLIG = 'milli-g';
 Blockly.Msg.SENSOR_UNIT_OMEGA = 'ω';
 Blockly.Msg.SENSOR_UNIT_PERCENT = '%';
 Blockly.Msg.SENSOR_UNIT_VOLT = 'V';
+Blockly.Msg.SENSOR_UNIT_ACCEL = 'm/s²';
 Blockly.Msg.SENSOR_TOUCH_BOB3 = 'arm';
 Blockly.Msg.SENSOR_SOUND_CALLIOPE = 'microphone';
 Blockly.Msg.MODE_VALUE = 'value';

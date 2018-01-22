@@ -1071,6 +1071,7 @@ Blockly.Msg.SENSOR_TOP = "top";  // untranslated
 Blockly.Msg.SENSOR_TOUCH = "capteur tactil";
 Blockly.Msg.SENSOR_TOUCH_BOB3 = "arm";  // untranslated
 Blockly.Msg.SENSOR_ULTRASONIC = "capteur ultra-son";
+Blockly.Msg.SENSOR_UNIT_ACCEL = "m/s²";  // untranslated
 Blockly.Msg.SENSOR_UNIT_CM = "cm";  // untranslated
 Blockly.Msg.SENSOR_UNIT_DEGREE = "°";  // untranslated
 Blockly.Msg.SENSOR_UNIT_MILLIG = "milli-g";  // untranslated
