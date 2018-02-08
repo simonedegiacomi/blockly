@@ -265,6 +265,32 @@ sensors.gyro.ev3 = {
     standardPort : '2',
 };
 
+sensors.force = {};
+sensors.force.nao = {
+    title : 'FORCE',
+    modes : [ {
+        name : 'VALUE',
+        type : 'Number',
+        unit : 'NEWTON',
+        op : 'NUM_REV',
+        value : 90
+    } ],    
+    ports : [ [ 'MOTOR_LEFT', 'left' ], [ 'MOTOR_RIGHT', 'right' ] ],
+};
+
+sensors.motor = {};
+sensors.motor.nao = {
+    title : 'MOTOR',
+    modes : [ {
+        name : 'CURRENT',
+        type : 'Number',
+        unit : 'AMPERE',
+	op : 'NUM_REV',
+        value : 90
+    } ],
+	ports : [ [ 'NAO_JOINT_HEADYAW', 'HeadYaw' ], [ 'NAO_JOINT_HEADPITCH', 'HeadPitch' ], [ 'NAO_JOINT_LEFTSHOULDERPITCH', 'LeftShoulderPitch' ], [ 'NAO_JOINT_LEFTSHOULDERROLL', 'LeftShoulderRoll' ], [ 'NAO_JOINT_LEFTELBOWYAW', 'LeftElbowYaw' ], [ 'NAO_JOINT_LEFTELBOWROLL', 'LeftElbowRoll' ], [ 'NAO_JOINT_LEFTWRISTYAW', 'LeftWristYaw' ], [ 'NAO_JOINT_LEFTHAND', 'LeftHand' ], [ 'NAO_JOINT_LEFTHIPYAWPITCH', 'LeftHipYawPitch' ], [ 'NAO_JOINT_LEFTHIPROLL', 'LeftHipRoll' ], [ 'NAO_JOINT_LEFTHIPPITCH', 'LeftHipPitch' ], [ 'NAO_JOINT_LEFTKNEEPITCH', 'LeftKneePitch' ], [ 'NAO_JOINT_LEFTANKLEPITCH', 'LeftAnklePitch' ], [ 'NAO_JOINT_RIGHTANKLEROLL', 'RightAnkleRoll' ], [ 'NAO_JOINT_RIGHTHIPYAWPITCH', 'RightHipYawPitch' ], [ 'NAO_JOINT_RIGHTHIPROLL', 'RightHipRoll' ], [ 'NAO_JOINT_RIGHTHIPPITCH', 'RightHipPitch' ], [ 'NAO_JOINT_RIGHTKNEEPITCH', 'RightKneePitch' ], [ 'NAO_JOINT_RIGHTANKLEPITCH', 'RightAnklePitch' ], [ 'NAO_JOINT_LEFTANKLEROLL', 'LeftAnkleRoll' ], [ 'NAO_JOINT_RIGHTSHOULDERPITCH', 'RightShoulderPitch' ], [ 'NAO_JOINT_RIGHTSHOULDERROLL', 'RightShoulderRoll' ], [ 'NAO_JOINT_RIGHTELBOWYAW', 'RightElbowYaw' ], [ 'NAO_JOINT_RIGHTELBOWROLL', 'RightElbowRoll' ], [ 'NAO_JOINT_RIGHTWRISTYAW', 'RightWristYaw' ], [ 'NAO_JOINT_RIGHTHAND', 'RightHand' ] ],
+};
+
 sensors.infrared = {};
 sensors.infrared.ardu = {
     title : 'INFRARED',
@@ -618,7 +644,7 @@ sensorsAll.calliope = [ sensors.key.calliope, sensors.pintouch.calliope, sensors
         sensors.accelerometer.calliope ];
 sensorsAll.microbit = [ sensors.key.microbit, sensors.pin.microbit, sensors.gesture.microbit, sensors.compass.microbit, sensors.timer.microbit,
         sensors.temperature.microbit, sensors.pin.microbit, sensors.accelerometer.microbit ];
-sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao, sensors.gyro.nao, sensors.accelerometer.nao];
+sensorsAll.nao = [ sensors.touch.nao, sensors.ultrasonic.nao, sensors.gyro.nao, sensors.accelerometer.nao, sensors.force.nao, sensors.motor.nao];
 
 function initSensors() {
     for ( var sensor in sensors) {
