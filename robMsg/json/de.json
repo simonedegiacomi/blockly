@@ -226,6 +226,7 @@
   "MODE_RATE":"Drehrate",
   "MODE_ROTATION":"Umdrehungen",
   "MODE_STATE":"Zustand",
+  "MODE_HEAD":"Kopf",
   "MOTOR":"Motor",
   "MOTORDIFF_ON_FOR_TOOLTIP":"Startet den Roboter mit einer bestimmten Geschwindigkeit und stoppt nach einer bestimmten Strecke.",
   "MOTORDIFF_ON_TOOLTIP":"Startet den Roboter mit einer bestimmten Geschwindigkeit.",
@@ -422,6 +423,7 @@
   "SENSOR_PIN" : "Pin",
   "SENSOR_GROVE" : "Grove",
   "SENSOR_MIC" : "Mikrofon",
+  "SENSOR_FORCE" : "Kraftsensor",
   "SET":"Setze",
   "SERVER_NOT_AVAILABLE":"Das Open Roberta Lab ist zur Zeit nicht erreichbar. </br>Die Internetverbindung wurde unterbrochen. Solltest du gerade einen EV3 mit dem USB-Kabel verbunden haben, genügt ein Klick auf die Programmieroberfläche.<br> Falls das Problem weiterhin besteht, überprüfe deine Internetverbindung und lade diese Webseite neu. Sollte das Problem erneut auftreten, schreibe bitte eine Mail an folgende Adresse:</br>roberta-zentrale@iais.fraunhofer.de",
   "SIM_BLOCK_NOT_SUPPORTED":"Diesen Block kann man leider nicht in der Simulation verwenden!",
@@ -920,5 +922,6 @@
   "MODE_DIGITAL": "digitalen",
   "TEXT_COMMENT_TOOLTIP": "Dokumentiere dein Programm mit diesem Block damit du und andere es später leichter haben, dein Programm zu verstehen. Dieser Kommentar wird auch im generierten Source Code zu sehen sein.",
   "MENU_ROBOT_STOP_HINT_EV3": "Drücke<span class='typcn typcn-media-stop'></span>+<span class='typcn typcn-arrow-sorted-down'></span>am Roboter um das Programm zu beenden!",
-  "MENU_ROBOT_STOP_HINT_NXT": "Drücke<span class='typcn typcn-media-cancel'></span>am Roboter um das Programm zu beenden!"
+  "MENU_ROBOT_STOP_HINT_NXT": "Drücke<span class='typcn typcn-media-cancel'></span>am Roboter um das Programm zu beenden!",
+  "MODE_CURRENT": "Strom"
 }
