@@ -51,7 +51,7 @@ Blockly.Blocks['robConf_generic'] = {
                 || Blockly.checkMsgKey('CONFIGURATION_PORT'), this);
         this.nameOld = name;
         var nameField = new Blockly.FieldTextInput(name, validateName);
-        this.appendDummyInput().appendField(Blockly.Msg[type + confBlock.title] || type + confBlock.title, 'SENSORTITLE').appendField(nameField, 'NAME');
+        this.appendDummyInput().setAlign(Blockly.ALIGN_RIGHT).appendField(Blockly.Msg[type + confBlock.title] || type + confBlock.title, 'SENSORTITLE').appendField(nameField, 'NAME');
 
         if (confBlock.bricks) {
             var container = Blockly.Workspace.getByContainer("bricklyDiv");
@@ -114,6 +114,7 @@ Blockly.Blocks['robConf_generic'] = {
                 this.appendDummyInput().setAlign(Blockly.ALIGN_RIGHT).appendField(portList[i][0]).appendField(pins, portList[i][1]);
             }
         }
+
         this.setTooltip(function() {
             return Blockly.Msg[confBlock.title + '_TOOLTIP'];
         });

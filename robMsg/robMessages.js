@@ -1193,3 +1193,6 @@ Blockly.Msg.SLOT_TILTED_NO = 'not';
 Blockly.Msg.SLOT_TILTED_ANY = 'any';
 Blockly.Msg.CONNECTOR = 'connection';
 Blockly.Msg.BRICKNAME_WEDO = 'WeDo';
+Blockly.Msg.SLOT_TILTED_ANY = 'shake';
+Blockly.Msg.STEPS_PER_REVOLUTION = 'steps per revolution';
+Blockly.Msg.ROTATIONS_PER_MINUTE = 'rotations per minute';

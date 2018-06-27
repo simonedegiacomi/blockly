@@ -213,11 +213,12 @@ h1 {
 			<block type="robActions_display_clear"></block>
 			<block type="robActions_display_clear_i2c"></block>
 			<block type="robActions_play_tone"></block>
-			<block type="robActions_set_led"></block>
-			<block type="robActions_set_rgb_led"></block>
+			<block type="robActions_brickLight_on"></block>
+			<block type="robActions_led_on"></block>
+			<block type="robActions_led_off"></block>
 			<block type="robActions_motor_on_for_ardu"></block>
 			<block type="robActions_set_relay"></block>
-			<block type="robActions_step_motor"></block>
+			<block type="robActions_motor_on_for"></block>
 	  </category>
 	<category name="TOOLBOX_SENSOR" svg="true"> <block
 		type="robSensors_light_getSample"></block> <block
@@ -236,8 +237,7 @@ h1 {
 		type="robSensors_rfid_getSample"></block><block
 		type="robSensors_key_getSample"></block>
 	   </category>
-		 <category
-		name="TOOLBOX_CONTROL" svg="true"> <category
+		 <category		name="TOOLBOX_CONTROL" svg="true"> <category
 		name="TOOLBOX_DECISION" svg="true"> <block
 		type="robControls_if"></block> <block type="robControls_ifElse"></block>
 	</category> <category name="TOOLBOX_LOOP" svg="true"> <block
