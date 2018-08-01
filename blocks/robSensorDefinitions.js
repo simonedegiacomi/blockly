@@ -771,7 +771,7 @@ sensors.rfid.arduino = {
     title : 'RFID',
     modes : [ {
         name : 'SERIAL',
-        type : 'Number'
+        type : 'String'
     }, {
         name : 'PRESENCE',
         type : 'Boolean'

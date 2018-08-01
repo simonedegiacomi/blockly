@@ -25,7 +25,7 @@ Blockly.Blocks['robConf_generic'] = {
     /**
      * @param {Object
      *            sensor}
-     * 
+     *
      * @memberof Block
      */
     init : function(confBlock) {
@@ -113,6 +113,12 @@ Blockly.Blocks['robConf_generic'] = {
                 //            }
                 this.appendDummyInput().setAlign(Blockly.ALIGN_RIGHT).appendField(portList[i][0]).appendField(pins, portList[i][1]);
             }
+        }
+
+        if (confBlock.fixedPorts) {
+          for (var i = 0; i < confBlock.fixedPorts.length; i++) {
+              this.appendDummyInput().setAlign(Blockly.ALIGN_RIGHT).appendField(confBlock.fixedPorts[i][0], 'FIXEDPORT') .appendField(confBlock.fixedPorts[i][1], 'VAR');
+          }
         }
 
         this.setTooltip(function() {

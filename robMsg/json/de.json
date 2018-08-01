@@ -1085,7 +1085,8 @@
 	"MODE_TILTED": "(geneigt)",
 	"ACTION_MOTOR": "Motor",
 	"CONNECTOR": "Anschluss",
-    "BRICKNAME_WEDO": "WeDo",
+  "BRICKNAME_WEDO": "WeDo",
 	"STEPS_PER_REVOLUTION": "Schritte pro Umdrehung",
-	"ROTATIONS_PER_MINUTE": "Umdrehungen pro Minute"
+	"ROTATIONS_PER_MINUTE": "Umdrehungen pro Minute",
+	"SET_RELAY": "Schalte Relaikarte"
 }

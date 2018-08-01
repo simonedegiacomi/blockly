@@ -42,7 +42,8 @@ confBlocks.ultrasonic.arduino = {
     ports : [ [ 'trig', 'TRIG' ], [ 'echo', 'ECHO' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '7', '6' ]
+    standardPins : [ '7', '6' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.light = {};
@@ -51,7 +52,8 @@ confBlocks.light.arduino = {
     ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [  ['input', '5V'] ]
 };
 
 confBlocks.moisture = {};
@@ -60,16 +62,18 @@ confBlocks.moisture.arduino = {
     ports : [ [ 'S', 'S' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.potentiometer = {};
 confBlocks.potentiometer.arduino = {
     title : 'POTENTIOMETER',
-    ports : [ [ 'input', 'INPUT' ] ],
+    ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.infrared = {};
@@ -86,25 +90,28 @@ confBlocks.infrared.arduino = {
     ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '11' ]
+    standardPins : [ '11' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.temperature = {};
 confBlocks.temperature.arduino = {
     title : 'TEMPERATURE',
-    ports : [ [ 'TMP36', 'TMP36' ] ],
+    ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.humidity = {};
 confBlocks.humidity.arduino = {
     title : 'HUMIDITY',
-    ports : [ [ '+', '+' ] ],
+    ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '2' ]
+    standardPins : [ '2' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.encoder = {};
@@ -113,7 +120,7 @@ confBlocks.encoder.arduino = {
     ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ '1', '2' ]
+    standardPins : [ '2' ]
 };
 
 confBlocks.motion = {};
@@ -122,16 +129,18 @@ confBlocks.motion.arduino = {
     ports : [ [ 'output', 'OUTPUT' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '7' ]
+    standardPins : [ '7' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.key = {};
 confBlocks.key.arduino = {
     title : 'KEY',
-    ports : [ [ 'output', 'OUTPUT' ] ],
+    ports : [ [ 'pin1', 'PIN1' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '1', '2' ]
+    standardPins : [ '2' ],
+    fixedPorts : [ ['pin2', '5V'] ]
 };
 confBlocks.key.wedo = {
     title : 'KEY',
@@ -145,7 +154,8 @@ confBlocks.drop.arduino = {
     ports : [ [ 'S', 'S' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.pulse = {};
@@ -154,16 +164,18 @@ confBlocks.pulse.arduino = {
     ports : [ [ 'S', 'S' ] ],
     pins : pinsA_UNO,
     sensor : true,
-    standardPins : [ 'A0' ]
+    standardPins : [ 'A0' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.rfid = {};
 confBlocks.rfid.arduino = {
     title : 'RFID',
-    ports : [ [ 'RST', 'RST' ], [ 'SDA', 'SDA' ], [ 'SCK', 'SCK' ], [ 'MOSI', 'MOSI' ], [ 'MISO', 'MISO' ] ],
+    ports : [ [ 'RST', 'RST' ], [ 'SDA', 'SDA' ] ],
     pins : pinsD_UNO,
     sensor : true,
-    standardPins : [ '9', '10', '13', '11', '12' ]
+    standardPins : [ '9', '10', '13', '11', '12' ],
+    fixedPorts : [ ['GND', 'GND'], ['3,3V', '3,3V'], [ 'SCK', '13' ], [ 'MOSI', '11' ], [ 'MISO', '12' ] ]
 };
 
 confBlocks.lcd = {};
@@ -172,22 +184,25 @@ confBlocks.lcd.arduino = {
     ports : [ [ 'RS', 'RS' ], [ 'E', 'E' ], [ 'D4', 'D4' ], [ 'D5', 'D5' ], [ 'D6', 'D6' ], [ 'D7', 'D7' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '12', '11', '5', '4', '3', '2' ]
+    standardPins : [ '12', '11', '5', '4', '3', '2' ],
+    fixedPorts : [ ['VSS', 'GND'], ['VDD', '5V'], ['V0', 'Vp'], ['RW', 'GND'] ]
 };
 
 confBlocks.lcdi2c = {};
 confBlocks.lcdi2c.arduino = {
     title : 'LCDI2C',
-    sensor : false
+    sensor : false,
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'], ['SDA', 'A4'], ['SCL', 'A5'] ]
 };
 
 confBlocks.led = {};
 confBlocks.led.arduino = {
     title : 'LED',
-    ports : [ [ 'output', 'OUTPUT' ] ],
+    ports : [ [ 'input', 'INPUT' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '13' ]
+    standardPins : [ '13' ],
+    fixedPorts : [ ['GND', 'GND'] ]
 };
 confBlocks.led.wedo = {
     title : 'LED',
@@ -201,7 +216,8 @@ confBlocks.buzzer.arduino = {
     ports : [ [ '+', '+' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '5' ]
+    standardPins : [ '5' ],
+    fixedPorts : [ ['GND', 'GND'] ]
 };
 confBlocks.buzzer.wedo = {
     title : 'BUZZER',
@@ -215,7 +231,8 @@ confBlocks.relay.arduino = {
     ports : [ [ 'IN', 'IN' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '6' ]
+    standardPins : [ '6' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.rgbled = {};
@@ -224,7 +241,8 @@ confBlocks.rgbled.arduino = {
     ports : [ [ 'red', 'RED' ], [ 'green', 'GREEN' ], [ 'blue', 'BLUE' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '5', '6', '3' ]
+    standardPins : [ '5', '6', '3' ],
+    fixedPorts : [ ['GND', 'GND'] ]
 };
 
 confBlocks.stepmotor = {};
@@ -233,7 +251,8 @@ confBlocks.stepmotor.arduino = {
     ports : [ [ 'IN1', 'IN1' ], [ 'IN2', 'IN2' ], [ 'IN3', 'IN3' ], [ 'IN4', 'IN4' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '6', '5', '4', '3' ]
+    standardPins : [ '6', '5', '4', '3' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.servo = {};
@@ -242,7 +261,8 @@ confBlocks.servo.arduino = {
     ports : [ [ 'pulse', 'PULSE' ] ],
     pins : pinsD_UNO,
     sensor : false,
-    standardPins : [ '8' ]
+    standardPins : [ '8' ],
+    fixedPorts : [ ['GND', 'GND'], ['VCC', '5V'] ]
 };
 
 confBlocks.gyro = {};
