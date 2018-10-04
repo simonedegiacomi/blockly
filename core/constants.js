@@ -297,7 +297,7 @@ Blockly.TYPE_DROPDOWN = function(device, opt_handler) {
     case 'ardu':
     case 'arduino':
     case 'bob3':
-    case 'makeblock':
+    case 'mbot':
     case 'nao':
         return new Blockly.FieldDropdown([
             [ Blockly.Msg.VARIABLES_TYPE_NUMBER, 'Number' ],

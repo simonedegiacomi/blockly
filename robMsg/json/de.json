@@ -1115,5 +1115,12 @@
 	"SET_RELAY": "Schalte Relais",
 	"SET_RELAY_ARDUINO": "Schalte Relais SRD-05VDC-SL-C",
 	"TO": "an",
-	"SENSOR_ULTRASONIC_DISTANCE_GETSAMPLE_TOOLTIP_ARDUINO": "Gibt den aktuellen Wert des Ultraschallsensors in cm zurück. Die weiteste Entfernung ist 400 cm."
+	"SENSOR_ULTRASONIC_DISTANCE_GETSAMPLE_TOOLTIP_ARDUINO": "Gibt den aktuellen Wert des Ultraschallsensors in cm zurück. Die weiteste Entfernung ist 400 cm.",
+	"GEARED_MOTOR": "Getriebemotor",
+	"LED_MATRIX": "LED Matrix",
+	"MODE_X": "X-Wert",
+	"MODE_Y": "Y-Wert",
+	"MODE_Z": "Z-Wert",
+	"MODE_SENSOR1": "Licht Sensor1",
+	"MODE_SENSOR2": "Licht Sensor2"
 }

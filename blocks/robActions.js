@@ -128,7 +128,7 @@ Blockly.Blocks['robActions_motor_on'] = {
         case 'ardu':
             ports = [ [ Blockly.Msg.MOTOR + ' ' + Blockly.Msg.MOTOR_LEFT, 'B' ], [ Blockly.Msg.MOTOR + ' ' + Blockly.Msg.MOTOR_RIGHT, 'C' ] ];
             break;
-        case 'makeblock':
+        case 'mbot':
             ports = [ [ Blockly.Msg.MOTOR + ' ' + 'M1', 'M1' ], [ Blockly.Msg.MOTOR + ' ' + 'M2', 'M2' ] ];
             break;
         case 'wedo':
@@ -936,6 +936,9 @@ Blockly.Blocks['robActions_led_on'] = {
                 'dropDown' : ports
             };
         }
+        if (this.workspace.device === 'mbot'){
+            ports = new Blockly.FieldDropdown( [[ 'LED0', '0' ], [ 'LED1', '1' ] ]);
+        }
         this.appendValueInput('COLOR').appendField(Blockly.Msg.LED_ON).appendField(ports, 'ACTORPORT').appendField(Blockly.Msg.BRICKLIGHT_COLOR).setCheck('Colour');
         this.setPreviousStatement(true);
         this.setNextStatement(true);
@@ -985,6 +988,9 @@ Blockly.Blocks['robActions_led_off'] = {
                 'type' : 'led',
                 'dropDown' : ports
             };
+        }
+        if (this.workspace.device === 'mbot'){
+            ports = new Blockly.FieldDropdown( [[ 'LED0', '0' ], [ 'LED1', '1' ] ]);
         }
         this.appendDummyInput().appendField(Blockly.Msg.LED_OFF).appendField(ports, 'ACTORPORT');
         this.setPreviousStatement(true);
