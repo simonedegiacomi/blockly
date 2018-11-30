@@ -124,6 +124,9 @@ Blockly.Block = function(workspace, prototypeName, opt_id) {
 
   /** @type {string|Blockly.Comment} */
   this.comment = null;
+  
+  /** @type {string|Blockly.Error} */
+  this.error = null;
 
   /**
    * @type {!goog.math.Coordinate}
@@ -1330,11 +1333,24 @@ Blockly.Block.prototype.setWarningText = function(text) {
 };
 
 /**
+ * Returns the error on this block (or '' if none).
+ * @return {string} Block's error.
+ */
+Blockly.Block.prototype.getErrorText = function() {
+    return this.error || '';
+};
+
+
+/**
  * Set this block's error text.
  * @param {?string} text The text, or null to delete.
  */
 Blockly.Block.prototype.setErrorText = function(text) {
-  // NOP.
+    if (this.error != text) {
+        Blockly.Events.fire(new Blockly.Events.Change(
+            this, 'error', null, this.error, text || ''));
+        this.error = text;
+    }
 };
 
 /**

@@ -155,6 +155,18 @@ Blockly.Xml.blockToDom = function(block, statement_list) {
         }
         element.appendChild(commentElement);
     }
+    
+    var errorText = block.getErrorText();
+    if (errorText) {
+        var errorElement = goog.dom.createDom('error', null, errorText.getText());
+        if (typeof block.error == 'object') {
+            errorElement.setAttribute('pinned', block.error.isVisible());
+            var hw = block.error.getBubbleSize();
+            errorElement.setAttribute('h', hw.height);
+            errorElement.setAttribute('w', hw.width);
+        }
+        element.appendChild(errorElement);
+    }
 
     if (block.data) {
         var dataElement = goog.dom.createDom('data', null, block.data);

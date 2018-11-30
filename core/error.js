@@ -79,6 +79,18 @@ Blockly.Error.prototype.drawIcon_ = function(group) {
   };
 
 /**
+* Get the dimensions of this error's bubble.
+* @return {!Object} Object with width and height properties.
+*/
+Blockly.Error.prototype.getBubbleSize = function() {
+    if (this.isVisible()) {
+        return this.bubble_.getBubbleSize();
+    } else {
+        return {width: this.width_, height: this.height_};
+    }
+};
+  
+/**
  * Create the text for the error's bubble.
  * @param {string} text The text to display.
  * @return {!SVGTextElement} The top-level node of the text.
