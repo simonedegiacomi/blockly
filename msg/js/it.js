@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "Non era poss
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Non era possibile trasformare questo programma nella lingua di programmazione del robot.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Non era possibile salvare questo programma a causa di un errore interno.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Non era possibile trasformare questo programma nella lingua di programmazione del robot.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Si è verificato un errore durante la eliminazione della configurazione del robot, per favore riprovaci!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Configurazione cancellata";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Il nome di configurazione non è un identifiactore valido.";

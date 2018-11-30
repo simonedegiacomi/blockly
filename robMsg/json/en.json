@@ -832,5 +832,6 @@
   "X": "x",
   "Y": "y",
   "YES": "yes",
-  "YOUNGER_THEN_14": "I am younger than 16!"
+  "YOUNGER_THEN_14": "I am younger than 16!",
+  "ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR": "There is an error in one of the blocks, please try to fix it and try again"
 }

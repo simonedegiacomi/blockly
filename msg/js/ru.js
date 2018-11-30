@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "Програ
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Программа не может быть преобразована и записана в языке программирования используемом для робота.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Программа не может быть сохранена из-за внутренней ошибки.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Программа не может быть преобразована и записана в языке программирования используемом для робота.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Во время удаления конфигурации робота произошла ошибка. Пожалуйста, попробуйте снова!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Конфигурация удалена";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Название конфигурации не является допустимым идентификатором.";

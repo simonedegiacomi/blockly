@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "Program nem�
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Program nelze převést do programovacího jazyku robota.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Program nelze uložit z důvodu vnitřní chyby.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Program nelze převést do programovacího jazyku robota.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Při mazání nastavení robota došlo k chybě, zkuste to znovu!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Nastavení smazáno";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Název nastavení není platný identifikátor";

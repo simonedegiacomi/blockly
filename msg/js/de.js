@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "Das Programm
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Das Programm konnte in der Datenbank nicht gefunden werden.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Ein Fehler ist beim internen Speichern des Programmes aufgetreten.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Das Programm konnte nicht in die entsprechende Programmiersprache übertragen werden.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Ein Fehler ist beim Löschen der Roboterkonfiguration aufgetreten, versuche es noch einmal!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Du hast die Roboterkonfiguration »$« gelöscht.";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Konfigurationsname ist kein valider Identifikator.";

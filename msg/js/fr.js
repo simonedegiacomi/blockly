@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "La générat
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Le programm n'a pas pu être trouvé dans la base de données.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Erreur d'enregistrement du programm.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Le programm n'a pas pu être transféré vers le language de programmation.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Erreur lors de la suppression de la configuration du robot. Réessaie !";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Tu as effacé la configuration $ du robot.";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Le nom de la configuration du robot n'est pas valide.";

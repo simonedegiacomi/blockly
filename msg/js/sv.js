@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "Programmet k
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Programmet kunde inte omvandlas till robotprogrammeringsspråket.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Programmet kunde inte sparas på grund av ett internt fel.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Programmet kunde inte omvandlas till robotprogrammeringsspråket.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Ett fel har uppstått när du raderade robotkonfigurationen, var god försök igen!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Konfiguration borttagen";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Konfigurationsnamnet är inte en giltig identifierare.";

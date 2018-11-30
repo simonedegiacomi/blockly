@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "无法生成
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "该程序不能转换为机器人编程语言。";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "由于内部错误无法保存该程序。";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "该程序不能转换为机器人编程语言。";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "删除机器人配置时出现错误, 请重试!";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "配置已删除";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "配置名称不是有效的标识符。";

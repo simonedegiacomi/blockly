@@ -1243,3 +1243,4 @@ Blockly.Msg.ACTOR_MODE_ANALOGIN_TOOLTIP = 'Writes an analog value (PWM wave) to 
 Blockly.Msg.ACTOR_MODE_DIGITALIN_TOOLTIP = 'Writes a HIGH or a LOW value to a digital pin. Only the values HIGH »1« and LOW »0« should be used.';
 Blockly.Msg.ACTION_INFRARED = 'infrared emitter';
 Blockly.Msg.LIST_CREATE_WITH_ERROR = 'Error: This block may be used only within a variable declaration.';
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = 'There is an error in one of the blocks, please try to fix it and try again';

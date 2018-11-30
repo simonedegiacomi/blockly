@@ -887,6 +887,7 @@ Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_GENERATION_FAILED = "The program 
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_NOT_FOUND = "Programmet kunne ikke findes.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_STORE_FAILED = "Programmet kunne ikke gemmes.";
 Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_PROGRAM_TRANSFORM_FAILED = "Programmet kunne ikke transformeres.";
+Blockly.Msg.ORA_COMPILERWORKFLOW_ERROR_VISITOR_RECEIVED_BLOCK_WITH_ERROR = "There is an error in one of the blocks, please try to fix it and try again";  // untranslated
 Blockly.Msg.ORA_CONFIGURATION_DELETE_ERROR = "Kunne ikke slette konfigurationen.";
 Blockly.Msg.ORA_CONFIGURATION_DELETE_SUCCESS = "Konfiguration slettet";
 Blockly.Msg.ORA_CONFIGURATION_ERROR_ID_INVALID = "Konfigurationens navn er ikke en gyldig identifikator.";
